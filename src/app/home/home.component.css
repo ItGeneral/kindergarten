@@ -1,0 +1,70 @@
+.home-content{
+  text-align: center;
+  margin:0 auto;
+}
+.hidden{
+  display: none;
+}
+.show{
+  display: inline-block;
+}
+.mt{
+  margin-top: 20px;
+}
+.home-title{
+  font-family: "Microsoft YaHei", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 200px;
+}
+.home-split{
+  border-left: 1px solid #ccc;
+  height: 15px;
+  margin-top: 5px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.home-content-text{
+  color: #333;
+  text-indent:25px; /*首行缩进25个像素*/
+  vertical-align: middle;
+  display: inline-block;
+  width: 960px;
+  margin-top: 10px;
+}
+.home-content-first{
+  height: 300px;
+  line-height: 300px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.home-foot{
+  bottom: 0px;
+  vertical-align: middle;
+  display: inline-block;
+  height: 100px;
+  max-height: 100px;
+  background-color: #2a2730;
+  color: #fff;
+  width:100%;
+}
+.home-foot-left{
+  float: left;
+  padding-left:30%;
+}
+.home-foot-right{
+  float: right;
+  padding-right:30%;
+}
+.foot-text{
+  float: left;
+  display: block;
+}
+.clear{
+  clear: both;
+}
+.foot-ul{
+  list-style-type: none;
+  vertical-align: middle;
+  padding-top: 30px;
+}

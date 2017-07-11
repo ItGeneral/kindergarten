@@ -1,0 +1,70 @@
+.photo{
+  text-align: center;
+  margin:100px auto;
+  display: table;
+  vertical-align: middle;
+}
+.photo-banner{
+  margin: 10px auto;
+  vertical-align: middle;
+  display: inline;
+  text-align: center;
+}
+.photo-banner a{
+  float: left;
+  padding: 10px 50px;
+}
+.photo-active{
+  cursor: pointer;
+  background-color: gray;
+  color: antiquewhite;
+}
+.photo-banner a:hover{
+  cursor: pointer;
+  background-color: gray;
+  color: antiquewhite;
+}
+.photo-banner a:focus{
+  cursor: pointer;
+  background-color: gray;
+  color: antiquewhite;
+}
+.photo-show{
+  display: inline-block;
+}
+.photo-hide{
+  display: none;
+}
+.clear{
+  clear: both;
+}
+.photo-album{
+  height: 180px;
+  width: 180px;
+  display: inline;
+  vertical-align: middle;
+}
+.photo-album-detail{
+  padding: 10px 10px 0px 10px;
+  border: 1px solid #ccc;
+  margin: 20px 5px;
+  float: left;
+}
+.photo-album-detail label{
+  text-align: center;
+  vertical-align: middle;
+}
+.photo-name{
+  padding: 5px 35px;
+}
+.photo-graph{
+  height: 180px;
+  width: 180px;
+  display: inline;
+}
+.photo-graph-detail{
+  padding: 10px 10px 10px 10px;
+  border: 1px solid #ccc;
+  margin: 20px 5px;
+  float: left;
+}

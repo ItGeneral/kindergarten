@@ -1,0 +1,20 @@
+<div class="nav-bar">
+  <div class="nav-left">
+    <a routerLink="/home"  routerLinkActive="tab-active">首页</a>
+    <a routerLink="/photo" routerLinkActive="tab-active">相册</a>
+    <a routerLink="/about" routerLinkActive="tab-active">通知</a>
+    <a routerLink="/about" routerLinkActive="tab-active">招聘</a>
+  </div>
+  <div class="nav-right">
+    <a routerLink="/myOrder" routerLinkActive="tab-active">新闻</a>
+    <a routerLink="/register" *ngIf="isShowLogin" routerLinkActive="tab-active">注册</a>
+    <a routerLink="/login" *ngIf="isShowLogin" routerLinkActive="tab-active">登录</a>
+    <a routerLink="" *ngIf="!isShowLogin" (click)="logout()" routerLinkActive="tab-active">退出登录</a>
+    <a routerLink="/backLogin" routerLinkActive="tab-active">后台登录</a>
+  </div>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+

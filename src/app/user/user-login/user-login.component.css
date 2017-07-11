@@ -1,0 +1,12 @@
+.error-tips{
+  font-size: 13px;
+  color: red;
+  padding-left: 20px;
+  font-family: "Microsoft YaHei", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.remember span{
+  font-family: "Microsoft YaHei", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+  vertical-align: 4px;
+}

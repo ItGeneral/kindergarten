@@ -1,0 +1,26 @@
+.nav-bar{
+  background-color: #00ae66;
+  line-height: 20px;
+  padding-left: 24%;
+  font-size:0;  /*nav-bar下面的标签之间的间距设置为0*/
+}
+.nav-bar a{
+  font-size: 14px;
+  color: antiquewhite;
+  padding: 10px 20px 6px 20px;
+  line-height: 30px;
+}
+.nav-bar a:hover{
+  background-color: gray;
+}
+.tab-active{
+  color: #000;
+  background-color: gray;
+}
+.nav-left{
+  display: inline;
+}
+.nav-right{
+  float: right;
+  padding-right: 31%;
+}
