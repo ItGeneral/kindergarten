@@ -13,21 +13,22 @@
                name="password" placeholder="Password" ng-maxlength="20" required />
       </div>
       <div class="form-group">
-        <input type="confirmPassword" class="form-control login-field" [(ngModel)]="user.confirmPassword" #confirmPassword="ngModel"
+        <input type="password" class="form-control login-field" [(ngModel)]="user.confirmPassword" #confirmPassword="ngModel"
                name="confirmPassword" placeholder="Confirm password" ng-maxlength="20" required />
       </div>
       <div class="form-group">
-        <input type="nickName" class="form-control login-field" [(ngModel)]="user.nickName" #nickName="ngModel"
-               name="nickName" placeholder="Enter your nickName" ng-maxlength="20" />
+        <input type="text" class="form-control login-field" [(ngModel)]="user.realName" #realName="ngModel"
+               name="realName" placeholder="Enter your realName" ng-maxlength="20" />
       </div>
       <div class="form-group">
-        <input type="email" class="form-control login-field" [(ngModel)]="user.email" #email="ngModel"
-               name="email" placeholder="Enter your email address" ng-maxlength="20" />
+        <input type="text" class="form-control login-field" [(ngModel)]="user.emailAddress" #emailAddress="ngModel"
+               name="emailAddress" placeholder="Enter your email address" ng-maxlength="20" />
       </div>
       <div class="form-group">
-        <input type="mobilePhone" class="form-control login-field" [(ngModel)]="user.mobilePhone" #mobilePhone="ngModel"
-               name="mobilePhone" placeholder="Enter your mobilePhone" ng-maxlength="20" />
+        <input type="text" class="form-control login-field" [(ngModel)]="user.telPhone" #telPhone="ngModel"
+               name="telPhone" placeholder="Enter your telPhone" ng-maxlength="20" />
       </div>
+      <div *ngIf="errMsg != null" class="error-tips">{{errMsg}}</div>
       <button class="btn btn-primary btn-lg btn-block" id="btn-login" type="submit">Registering  now</button>
     </form>
   </div>

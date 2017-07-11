@@ -6,11 +6,12 @@
   </div>
   <div class="clear"></div>
   <div class="photo-button">
-    <a href="#" class="btn btn-success btn-lg active" role="button">上传照片</a>
-    <a href="#" class="btn btn-success btn-lg active" role="button">上传视频</a>
+    <a href="#" *ngIf="showGraphBanner" class="btn btn-success btn-lg active" role="button">上传照片</a>
+    <a href="#" *ngIf="showVideoBanner" class="btn btn-success btn-lg active" role="button">上传视频</a>
   </div>
+  <div class="clear"></div>
   <!-- 相册展示 -->
-  <div class="photo-album" [ngClass]="{'photo-show': !showGraph, 'photo-hide' : showGraph}">
+  <div class="photo-album" *ngIf="!showGraph" [ngClass]="{'photo-show': !showGraph, 'photo-hide' : showGraph}">
     <div class="photo-album-detail" *ngFor="let photo of photoAlbumList" (click)="showGraph = true;">
       <img src="{{photo.img}}" class="img-rounded" height="140" width="140" ><br>
       <label class="photo-name">{{photo.name}}({{photo.count}})</label>
@@ -18,7 +19,7 @@
   </div>
   <!-- 相片展示 -->
   <div class="clear"></div>
-  <div class="photo-graph" [ngClass]="{'photo-show': showGraph, 'photo-hide' : !showGraph}">
+  <div class="photo-graph" *ngIf="showGraph">
     <div class="photo-graph-detail" *ngFor="let photograph of photographList">
       <img src="{{photograph}}" alt="..." class="img-rounded" height="140" width="140" >
     </div>

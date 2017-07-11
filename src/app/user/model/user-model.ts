@@ -1,11 +1,11 @@
 export class User {
     id: number;
     userName: string;
-    nickName: string;
+    realName: string;
     password: string;
     rememberMe:boolean;
-    email: string;
+    emailAddress: string;
     confirmPassword: string;
     vcode:string;
-    mobilePhone:string;
+    telPhone:string;
 }

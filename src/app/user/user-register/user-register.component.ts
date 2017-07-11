@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from "../model/user-model";
-import {Http} from "@angular/http";
+import {Http, RequestOptions} from "@angular/http";
 import {Router} from "@angular/router";
+import {Subject} from "rxjs/Subject";
+import {HttpService} from "app/service/http.service";
 
 @Component({
   selector: 'app-user-register',
@@ -12,8 +14,15 @@ export class UserRegisterComponent implements OnInit {
 
   public user:User = new User();
 
+  private subject: Subject<User> = new Subject<User>();
+
   public description:string;
-  constructor(public router: Router, public http: Http){}
+
+  public errMsg:string;
+
+  public headers = new Headers({'Content-Type': 'application/json'});
+
+  constructor(public router: Router, public http: Http, public httpService : HttpService){}
 
   ngOnInit() {
     console.log(this.router.url)
@@ -21,9 +30,34 @@ export class UserRegisterComponent implements OnInit {
   }
 
   public register(){
-    console.log(this.user);
-    //注册完成后跳转至登录页
-    this.router.navigateByUrl("login");
+    if(this.user.password != this.user.confirmPassword){
+      this.errMsg = "两次密码输入必须一样";
+      return ;
+    }
+     let data = new URLSearchParams();
+     data.append('emailAddress', this.user.emailAddress);
+     data.append('password', this.user.password);
+     data.append('userName', this.user.userName);
+     data.append('telPhone', this.user.telPhone);
+     data.append('realName', this.user.realName);
+     this.http.post("http://localhost:8080/register", data)
+        .map(response => {
+          let data = response.json();
+          if(data.status == "200"){
+            this.subject.next(Object.assign({},this.user));
+            //注册完成后跳转至登录页
+            this.router.navigateByUrl("login");
+          }else{
+            this.errMsg = data.message;
+          }
+        }).subscribe(
+          data => {
+            console.log("register success");
+          },
+          error => {
+            console.error(error);
+          }
+        );
   }
 
 }

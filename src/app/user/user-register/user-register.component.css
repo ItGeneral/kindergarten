@@ -25,3 +25,9 @@
 .btn-lg{
   background-color: #00ae66;
 }
+.error-tips{
+  font-size: 13px;
+  color: red;
+  padding-left: 20px;
+  font-family: "Microsoft YaHei", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

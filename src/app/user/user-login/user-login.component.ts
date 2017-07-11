@@ -34,7 +34,7 @@ export class UserLoginComponent implements OnInit {
    * subscribe 异步处理 如果需要用返回的数据，最好把方法写在里面。
    */
   public login(){
-    this.http.get("http://localhost:8080/login?userName=" + this.user["userName"] + "&password=" + this.user["password"] + "&rememberMe=" + this.user["rememberMe"])
+    this.http.get("http://localhost:8080/login?userName=" + this.user.userName + "&password=" + this.user.password + "&rememberMe=" + this.user.rememberMe)
       .map(response => {
         let data = response.json();
         if(data["status"] == "200"){
