@@ -1,6 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import {ActivatedRoute, ActivatedRouteSnapshot, Router, RouterState, RouterStateSnapshot} from "@angular/router";
-import {User} from "./user/model/user-model";
+import {User} from "./util/model/user-model";
 import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({

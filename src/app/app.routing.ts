@@ -23,7 +23,8 @@ const appRoutes: Routes = [
   {path : 'register', component: UserRegisterComponent},
   {path : 'login', component: UserLoginComponent},
   {path : 'myOrder', loadChildren: './order/order.module#OrderModule'},
-  {path : 'about', loadChildren: './about/about.module#AboutModule'}//懒加载
+  {path : 'about', loadChildren: './about/about.module#AboutModule'},//懒加载
+  {path : 'back-system', loadChildren: './back-system/app-back-system/app-back-system.module#AppBackSystemModule'}
 ];
 
 export const appRouting:ModuleWithProviders  = RouterModule.forRoot(appRoutes);

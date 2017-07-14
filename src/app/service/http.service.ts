@@ -7,7 +7,7 @@ import {Injectable} from '@angular/core';
 import {Headers, Http, Response, RequestOptions, URLSearchParams, Jsonp} from "@angular/http";
 import 'rxjs/add/operator/toPromise';
 import {Observable} from "rxjs";
-import {Params} from "../util/app.params.component";
+import {Params} from "../util/model/params-model";
 
 // providers: [HttpService]，providers数组告诉 Angular，当它创建新的AppComponent组件时，也要创建一个Service的新实例
 @Injectable()

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Subject} from "rxjs/Subject";
-import {User} from "../model/user-model";
+import {User} from "../../util/model/user-model";
 import {Observable} from "rxjs/Observable";
 import {Router} from "@angular/router";
 import {Http} from "@angular/http";

@@ -4,7 +4,6 @@ import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
 import {homeRoutes} from "./home.route";
 import {FormsModule} from "@angular/forms";
-import {HttpService} from "../service/http.service";
 
 
 @NgModule({
@@ -16,7 +15,6 @@ import {HttpService} from "../service/http.service";
   declarations: [ //声明本模块中拥有的视图类
     HomeComponent,
   ],
-  providers: [HttpService],
   bootstrap: [HomeComponent] //指定应用的主视图, 它是所有其它视图的宿主
 })
 export class HomeModule {

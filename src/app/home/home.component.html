@@ -1,12 +1,12 @@
 <div class="home-content">
   <div class="home-title">简  介</div>
-  <div class="home-content-text">{{introduction}}</div>
+  <div class="home-content-text">{{sysBaseInfo.schoolIntroduction}}</div>
 
   <div class="home-title">校园文化</div>
-  <div class="home-content-text">{{introduction}}</div>
+  <div class="home-content-text">{{sysBaseInfo.schoolCulture}}</div>
 
   <div class="home-title">师  资</div>
-  <div class="home-content-text">{{teacherDesc}}</div>
+  <div class="home-content-text">{{sysBaseInfo.schoolTeacherInfo}}</div>
 
   <div class="home-title mt">活  动</div>
   <!-- 图片轮播 -->
@@ -52,12 +52,13 @@
   <div class="home-foot">
     <div class="home-foot-left">
       <ul class="foot-ul">
-        <li>联系电话：{{footMsg.telPhone}}</li>
-        <li>版权所有：{{footMsg.copyRight}}</li>
+        <li>联系电话：{{sysBaseInfo.schoolContactPhone}}</li>
+        <li>版权所有：西师大幼儿园</li>
+        <li>学校地址：{{sysBaseInfo.schoolAddress}}</li>
       </ul>
     </div>
     <div class="home-foot-right">
-      <img src="{{footMsg.weChatImg}}" height="100px" width="100px">
+      <img src="{{weChatImg}}" height="100px" width="100px">
     </div>
   </div>
 </div>
