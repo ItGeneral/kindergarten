@@ -9,6 +9,7 @@
   color: antiquewhite;
   padding: 10px 20px 6px 20px;
   line-height: 30px;
+  text-decoration: none;
 }
 .nav-bar a:hover{
   background-color: gray;
