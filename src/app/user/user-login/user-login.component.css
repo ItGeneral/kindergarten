@@ -1,3 +1,43 @@
+.login-background{
+  height: 834px;
+  width: 100%;
+  background: url("../../../assets/img/login-bg.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.login-form-fill{
+  top: 45%;
+  left: 45%;
+  position: relative;
+}
+.login-fa-icon{
+  float: left;
+  position: absolute;
+  padding-top: 5px;
+  text-indent: 5px;
+}
+.fa-icon{
+  color: #C9C9C9;
+  font-size: 16px;
+}
+
+.login-input{
+  font-size:17px;
+  text-indent:3px;
+  border-color:transparent
+}
+
+
+
+
+
+
+
+
+
+
+
 .error-tips{
   font-size: 13px;
   color: red;

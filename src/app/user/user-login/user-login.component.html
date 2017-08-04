@@ -1,14 +1,13 @@
 <!-- 登录页面 -->
-<div class="container"><br/>
-  <div class="body-bg"></div>
+  <!--<div class="body-bg"></div>
   <div class="login">
     <div class="login-screen">
-      <div class="login-icon">
+      &lt;!&ndash;<div class="login-icon">
         <img src="./assets/img/icon.png" title="Welcome to FlashingBuy" />
         <h4>
           Welcome to <small>&nbsp;&nbsp;FlashingBuy</small>
         </h4>
-      </div>
+      </div>&ndash;&gt;
       <form #form="ngForm" class="login-form" (ngSubmit)="login()">
         <div class="form-group">
           <input type="text" class="form-control login-field" name="userName" [(ngModel)]="user.userName" #userName="ngModel"
@@ -27,6 +26,19 @@
         <button class="btn btn-primary btn-lg btn-block" id="btn-login" type="submit">Log in</button>
         <a class="login-link" href="#">Lost your password?</a>
       </form>
+    </div>
+  </div>-->
+<div class="login-background">
+  <div class="login-form-fill">
+    <div class="login-user">
+      <div class="login-fa-icon"><i class="fa fa-user fa-icon"></i></div>
+      <input type="text" class="login-input" name="userName" [(ngModel)]="user.userName" #userName="ngModel"
+              ng-maxlength="20" required />
+    </div>
+    <div class="login-pass">
+      <div class="login-fa-icon"><i class="fa fa-lock fa-icon"></i></div>
+      <input type="password" [(ngModel)]="user.password" #password="ngModel"
+             name="password"  ng-maxlength="20" required />
     </div>
   </div>
 </div>
