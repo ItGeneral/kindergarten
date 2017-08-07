@@ -21,6 +21,8 @@ export class UserLoginComponent implements OnInit {
 
   private errMsg:string;
 
+  private file1:File;
+
   public get currentUser():Observable<User>{
     return this.subject.asObservable();
   }

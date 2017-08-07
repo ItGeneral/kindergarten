@@ -1,44 +1,31 @@
 <!-- 登录页面 -->
-  <!--<div class="body-bg"></div>
-  <div class="login">
-    <div class="login-screen">
-      &lt;!&ndash;<div class="login-icon">
-        <img src="./assets/img/icon.png" title="Welcome to FlashingBuy" />
-        <h4>
-          Welcome to <small>&nbsp;&nbsp;FlashingBuy</small>
-        </h4>
-      </div>&ndash;&gt;
-      <form #form="ngForm" class="login-form" (ngSubmit)="login()">
-        <div class="form-group">
-          <input type="text" class="form-control login-field" name="userName" [(ngModel)]="user.userName" #userName="ngModel"
-                 placeholder="Enter your userName" ng-maxlength="20" required />
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control login-field" [(ngModel)]="user.password" #password="ngModel"
-                 name="password" placeholder="Password" ng-maxlength="20" required />
-        </div>
-        <div *ngIf="errMsg != null" class="error-tips">{{errMsg}}</div>
-        <div class="remember">
-          <label>
-            <input type="checkbox" name="rememberMe" [(ngModel)]="user.rememberMe" #rememberMe="ngModel"><span>记住账号</span>
-          </label>
-        </div>
-        <button class="btn btn-primary btn-lg btn-block" id="btn-login" type="submit">Log in</button>
-        <a class="login-link" href="#">Lost your password?</a>
-      </form>
-    </div>
-  </div>-->
 <div class="login-background">
-  <div class="login-form-fill">
-    <div class="login-user">
-      <div class="login-fa-icon"><i class="fa fa-user fa-icon"></i></div>
-      <input type="text" class="login-input" name="userName" [(ngModel)]="user.userName" #userName="ngModel"
-              ng-maxlength="20" required />
+  <div class="login-content">
+    <div class="login-header">
+      <img src="assets/img/logo-dark.png">
     </div>
-    <div class="login-pass">
-      <div class="login-fa-icon"><i class="fa fa-lock fa-icon"></i></div>
-      <input type="password" [(ngModel)]="user.password" #password="ngModel"
-             name="password"  ng-maxlength="20" required />
+    <form>
+      <div class="kid-input-box">
+        <img class="login-img"  src="assets/img/user.png">
+        <input type="text" name="userName" [(ngModel)]="user.userName" #userName="ngModel" placeholder="Please enter your userName" ng-maxlength="20" required >
+      </div>
+      <div class="kid-input-box">
+        <img class="login-img" src="assets/img/password.png">
+        <input type="password" name="password" [(ngModel)]="user.password" #password="ngModel" placeholder="Please enter your password" ng-maxlength="20" required>
+      </div>
+    </form>
+    <div class="remember-box">
+      <label>
+        <input type="checkbox" name="rememberMe" [(ngModel)]="user.rememberMe" #rememberMe="ngModel">
+        <span>Remember Me</span>
+      </label>
+    </div>
+    <div class="kid-btn-parent">
+      <button class="kid-btn-primary">Login</button>
+    </div>
+    <div class="logon-box">
+      <a href="javascript:;">Forgot?</a>
+      <a routerLink="/register" href="javascript:;">Register</a>
     </div>
   </div>
 </div>
