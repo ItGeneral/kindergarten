@@ -1,0 +1,16 @@
+.user-reset{
+  display: inline-block;
+  text-align: center;
+  margin-top: 8%;
+}
+.reset-span{
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+.reset-input{
+  margin-left: 10px;
+}
+.reset-btn{
+  margin-left: 50px;
+}

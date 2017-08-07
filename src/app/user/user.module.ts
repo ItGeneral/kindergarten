@@ -5,6 +5,7 @@ import {RouterModule} from "@angular/router";
 import {UserRegisterComponent} from "./user-register/user-register.component";
 import {UserLoginComponent} from "./user-login/user-login.component";
 import {FormsModule} from "@angular/forms";
+import { UserResetComponent } from './user-reset/user-reset.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import {FormsModule} from "@angular/forms";
   ],
   declarations: [
     UserRegisterComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UserResetComponent
   ],
   exports:[UserRegisterComponent, UserLoginComponent] //declarations 的子集，可用于其它模块的组件模板。
 })

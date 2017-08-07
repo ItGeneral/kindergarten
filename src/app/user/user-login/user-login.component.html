@@ -6,12 +6,12 @@
     </div>
     <form>
       <div class="kid-input-box">
-        <img class="login-img"  src="assets/img/user.png">
-        <input type="text" name="userName" [(ngModel)]="user.userName" #userName="ngModel" placeholder="Please enter your userName" ng-maxlength="20" required >
+        <img class="login-img" src="assets/img/user.png">
+        <input type="text" class="login-input" name="userName" [(ngModel)]="user.userName" #userName="ngModel" placeholder="Please enter your userName" ng-maxlength="20" required >
       </div>
       <div class="kid-input-box">
         <img class="login-img" src="assets/img/password.png">
-        <input type="password" name="password" [(ngModel)]="user.password" #password="ngModel" placeholder="Please enter your password" ng-maxlength="20" required>
+        <input type="password" class="login-input" name="password" [(ngModel)]="user.password" #password="ngModel" placeholder="Please enter your password" ng-maxlength="20" required>
       </div>
     </form>
     <div class="remember-box">
@@ -24,7 +24,7 @@
       <button class="kid-btn-primary">Login</button>
     </div>
     <div class="logon-box">
-      <a href="javascript:;">Forgot?</a>
+      <a routerLink="/reset"href="javascript:;">Forgot?</a>
       <a routerLink="/register" href="javascript:;">Register</a>
     </div>
   </div>

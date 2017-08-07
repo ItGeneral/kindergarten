@@ -69,3 +69,6 @@
 .logon-box a:active{
   color: #87CEFA;
 }
+.login-input{
+  padding-left: 42px;
+}

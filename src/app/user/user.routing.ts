@@ -6,11 +6,13 @@
 
 import {UserRegisterComponent} from "./user-register/user-register.component";
 import {UserLoginComponent} from "./user-login/user-login.component";
+import {UserResetComponent} from "./user-reset/user-reset.component";
 
 export const userRoutes = [
 
   {path : '', redirectTo : 'login', pathMatch: 'full'},
   {path : 'login', component: UserLoginComponent},
-  {path : 'register', component: UserRegisterComponent}
+  {path : 'register', component: UserRegisterComponent},
+  {path : 'reset', component : UserResetComponent}
 ];
 
