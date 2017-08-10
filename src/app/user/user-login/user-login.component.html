@@ -21,11 +21,15 @@
       </label>
     </div>
     <div class="kid-btn-parent">
-      <button class="kid-btn-primary">Login</button>
+      <button class="kid-btn-primary" (click)="login()">Login</button>
     </div>
     <div class="logon-box">
-      <a routerLink="/reset"href="javascript:;">Forgot?</a>
-      <a routerLink="/register" href="javascript:;">Register</a>
+      <a routerLink="/reset">Forgot?</a>
+      <a routerLink="/register">Register</a>
     </div>
   </div>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
 </div>

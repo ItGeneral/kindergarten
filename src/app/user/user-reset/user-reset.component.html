@@ -1,21 +1,29 @@
-<div class="user-reset">
-  <div class="kid-input-box">
-    <span class="reset-span">用户名：</span>
-    <input class="reset-input" type="text">
-  </div>
-  <div class="kid-input-box">
-    <span class="reset-span">验证电话：</span>
-    <input class="reset-input" type="text">
-  </div>
-  <div class="kid-input-box">
-    <span class="reset-span">新密码：</span>
-    <input class="reset-input" type="password">
-  </div>
-  <div class="kid-input-box">
-    <span class="reset-span">确认密码：</span>
-    <input class="reset-input" type="password">
-  </div>
-  <div class="kid-btn-parent">
-    <button class="kid-btn-primary reset-btn">Reset Password</button>
+<div class="container reset"><br/>
+  <div class="reset-desc">{{sysBaseInfo.schoolIntroduction}}</div>
+  <div class="reset-split"></div>
+  <div class="reset-screen">
+    <div class="kid-input-box">
+      <span class="reset-span">用户名：</span>
+      <input class="reset-input" type="text" name="userName" [(ngModel)]="user.userName" #userName="ngModel"
+             placeholder="Please enter your userName" ng-maxlength="20" required>
+    </div>
+    <div class="kid-input-box">
+      <span class="reset-span">验证电话：</span>
+      <input class="reset-input" type="text" name="telPhone" [(ngModel)]="user.telPhone" #telPhone="ngModel"
+             placeholder="Please enter your telPhone" ng-maxlength="20" required>
+    </div>
+    <div class="kid-input-box">
+      <span class="reset-span">新密码：</span>
+      <input class="reset-input" type="password" name="password" [(ngModel)]="user.password" #password="ngModel"
+             placeholder="Please enter your password" ng-maxlength="20" required>
+    </div>
+    <div class="kid-input-box">
+      <span class="reset-span">确认密码：</span>
+      <input class="reset-input" type="password" name="confirmPassword" [(ngModel)]="user.confirmPassword" #confirmPassword="ngModel"
+             placeholder="Please enter your password again" ng-maxlength="20" required>
+    </div>
+    <div class="kid-btn-parent mt20">
+      <button class="kid-btn-primary reset-btn" (click)="resetPass()">Reset Password</button>
+    </div>
   </div>
 </div>

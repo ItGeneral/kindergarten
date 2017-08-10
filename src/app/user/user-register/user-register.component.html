@@ -1,9 +1,8 @@
 <div class="container register"><br/>
-  <div class="register-bg"></div>
   <div class="register-desc">{{sysBaseInfo.schoolIntroduction}}</div>
   <div class="register-split"></div>
   <div class="register-screen">
-    <form #form="ngForm" class="login-form" (ngSubmit)="register()">
+    <form #form="ngForm" class="register-form" (ngSubmit)="register()">
       <div class="kid-input-box">
         <input type="text" class="register-input" name="userName" [(ngModel)]="user.userName" #userName="ngModel"
                placeholder="Enter your userName" ng-maxlength="20" required />
