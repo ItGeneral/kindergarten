@@ -271,3 +271,10 @@
 .menu-ul li:first-child{
   padding-top: 30px;
 }
+.fa-menu-li{
+  margin-left: -25px;
+  font-size: 16px;
+}
+.menu-span{
+  padding-left: 10px;
+}
