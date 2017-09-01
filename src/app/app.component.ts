@@ -1,7 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import {ActivatedRoute, ActivatedRouteSnapshot, Router, RouterState, RouterStateSnapshot} from "@angular/router";
 import {User} from "./util/model/user-model";
-import { ToastsManager } from 'ng2-toastr/ng2-toastr';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +12,7 @@ export class AppComponent implements OnInit{
 
   constructor(
     public router: Router,
-    public activatedRoute: ActivatedRoute,
-    public toastr: ToastsManager
+    public activatedRoute: ActivatedRoute
   ){}
 
   private isShowLogin : boolean;
@@ -48,7 +46,6 @@ export class AppComponent implements OnInit{
 
   public logout() : void{
     localStorage.removeItem("currentUser");
-    this.toastr.success('退出成功！','系统提示');
     this.router.navigateByUrl("/");
   }
 

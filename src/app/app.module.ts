@@ -7,11 +7,10 @@ import { AppComponent } from './app.component';
 import {UserModule} from "./user/user.module";
 import {AboutModule} from "./about/about.module";
 import {HomeModule} from "./home/home.module";
-import {appRouting} from "./app.routing";
+import {appRouting} from "./app.routing"    ;
 import {HttpService} from "./service/http.service";
 import {OrderModule} from "./order/order.module";
 import {PhotoModule} from "./photo/photo.module";
-import {ToastModule} from 'ng2-toastr/ng2-toastr';
 
 @NgModule({
   declarations: [
@@ -27,8 +26,7 @@ import {ToastModule} from 'ng2-toastr/ng2-toastr';
     AboutModule,
     UserModule,
     OrderModule,
-    PhotoModule,
-    ToastModule.forRoot()
+    PhotoModule
   ],
   providers: [HttpService],
   bootstrap: [AppComponent]
