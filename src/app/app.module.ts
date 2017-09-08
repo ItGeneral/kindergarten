@@ -4,13 +4,13 @@ import { FormsModule } from '@angular/forms';
 import {HttpModule, JsonpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
-import {UserModule} from "./user/user.module";
-import {AboutModule} from "./about/about.module";
-import {HomeModule} from "./home/home.module";
-import {appRouting} from "./app.routing"    ;
-import {HttpService} from "./service/http.service";
-import {OrderModule} from "./order/order.module";
-import {PhotoModule} from "./photo/photo.module";
+import {UserModule} from './user/user.module';
+import {AboutModule} from './about/about.module';
+import {HomeModule} from './home/home.module';
+import {appRouting} from './app.routing'    ;
+import {HttpService} from './service/http.service';
+import {OrderModule} from './order/order.module';
+import {PhotoModule} from './photo/photo.module';
 
 @NgModule({
   declarations: [

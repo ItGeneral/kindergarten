@@ -1,13 +1,13 @@
-import { Component,OnInit } from '@angular/core';
-import {ActivatedRoute, ActivatedRouteSnapshot, Router, RouterState, RouterStateSnapshot} from "@angular/router";
-import {User} from "./util/model/user-model";
+import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute, ActivatedRouteSnapshot, Router, RouterState, RouterStateSnapshot} from '@angular/router';
+import {User} from './util/model/user-model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   title = 'app works!';
 
   constructor(
@@ -15,14 +15,14 @@ export class AppComponent implements OnInit{
     public activatedRoute: ActivatedRoute
   ){}
 
-  private isShowLogin : boolean;
+  private isShowLogin: boolean;
 
   private currentUser: User = new User();
 
-  ngOnInit():void {
+  ngOnInit(): void {
     console.log(this.router.url);
 
-    let activatedRouteSnapshot:ActivatedRouteSnapshot=this.activatedRoute.snapshot;
+    let activatedRouteSnapshot: ActivatedRouteSnapshot = this.activatedRoute.snapshot;
     let routerState: RouterState = this.router.routerState;
     let routerStateSnapshot: RouterStateSnapshot = routerState.snapshot;
 
@@ -34,19 +34,19 @@ export class AppComponent implements OnInit{
 
   }
 
-  public judgeLogin(): void{
-    //获取当前登录对象
-    this.currentUser = JSON.parse(localStorage.getItem("currentUser"));
-    if(this.currentUser != null && this.currentUser.userName != "" && this.currentUser.userName != null){
+  public judgeLogin(): void {
+    /*获取当前登录对象*/
+    this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (this.currentUser != null && this.currentUser.userName !== '' && this.currentUser.userName != null) {
       this.isShowLogin = false;
     }else {
       this.isShowLogin = true;
     }
   }
 
-  public logout() : void{
-    localStorage.removeItem("currentUser");
-    this.router.navigateByUrl("/");
+  public logout(): void {
+    localStorage.removeItem('currentUser');
+    this.router.navigateByUrl('/');
   }
 
 
